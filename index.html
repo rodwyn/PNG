@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Mundo del hombre</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+		<script src="js/modal_1.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/modal_1.css" />
+		<style>
+            .divTable
+            {
+                display:  table;
+                width:100%;
+                //border:1px solid  #666666;
+            }
+
+            .divRow
+            {
+                display:table-row;
+                width:auto;
+            }
+
+            .divCell
+            {
+                float:left;/*fix for  buggy browsers*/
+                display:table-column;
+                //width:256px;
+                width:33%;
+                height: 960px;
+                border: #ffff00 solid thin;
+                background-color: black;
+                opacity: 0;
+            }
+            .circleBase {
+                border-radius: 50%;
+            }
+            .type2 {
+                width: 50px;
+                height: 50px;
+                background: #6666ff;
+                //border: 3px solid #000;
+            }
+            .type2:hover{background: #5252CC;}
+            .txt {color: #6666ff; position: relative;}
+            .txt span {font-weight: bolder; display: block;}
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Ventanas modales -->
+        <div class="md-modal md-effect-12" id="modal-01">
+            <div class="md-content">
+                <h3>Producto 01</h3>
+                <div>
+                    <p>This is a modal window. You can do the following things with it:</p>
+                    <ul>
+                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    </ul>
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-effect-12" id="modal-02">
+            <div class="md-content" >
+                <div >
+                    <div class="circleBase type2" data-txt="txt-01" style="position: relative;top: 20px;left: 50px;"></div>
+                    <div class="circleBase type2" data-txt="txt-02" style="position: relative;top: 50px;left: 20px;"></div>
+                    <div class="circleBase type2" data-txt="txt-03" style="position: relative;top: 70px;left: 50px;"></div>
+                    <div class="circleBase type2" data-txt="txt-04" style="position: relative;top: 50px;left: 70px;"></div>
+
+                    <div id="txt-01" class="txt" style="top: 20px;left: 50px;"><span>Título 01</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    <div id="txt-02" class="txt" style="top: 50px;left: 20px;"><span>Título 02</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    <div id="txt-03" class="txt" style="top: 70px;left: 50px;"><span>Título 03</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    <div id="txt-04" class="txt" style="top: 50px;left: 70px;"><span>Título 04</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-effect-12" id="modal-03">
+            <div class="md-content">
+                <div>
+                    <span class="helper"></span>
+                    <img src="images/img3/series.png">
+                    <div class="circleBase type2" data-txt="txt-31" style="position: relative;top: -720px;left: 185px;"></div>
+                    <div class="circleBase type2" data-txt="txt-32" style="position: relative;top: 50px;left: 20px;"></div>
+                    <div class="circleBase type2" data-txt="txt-33" style="position: relative;top: 70px;left: 50px;"></div>
+                    <div class="circleBase type2" data-txt="txt-34" style="position: relative;top: 50px;left: 70px;"></div>
+
+                    <div id="txt-31" class="txt" style="left: 309px; text-align: left; top: -800px; width: 245px;"><span>Título 01</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    <div id="txt-32" class="txt" style="top: 50px;left: 20px;"><span>Título 02</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    <div id="txt-33" class="txt" style="top: 70px;left: 50px;"><span>Título 03</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    <div id="txt-34" class="txt" style="top: 50px;left: 70px;"><span>Título 04</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</div>
+                    
+                    <div style="border-style: dashed dashed none none; height: 60px; left: 240px; position: relative; top: -1002px; width: 100px;"></div>
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-effect-12" id="modal-04">
+            <div class="md-content">
+                <h3>Producto 04</h3>
+                <div>
+                    <p>This is a modal window. You can do the following things with it:</p>
+                    <ul>
+                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    </ul>
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-effect-12" id="modal-05">
+            <div class="md-content">
+                <h3>Producto 05</h3>
+                <div>
+                    <p>This is a modal window. You can do the following things with it:</p>
+                    <ul>
+                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    </ul>
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-effect-12" id="modal-06">
+            <div class="md-content">
+                <h3>Producto 06</h3>
+                <div>
+                    <p>This is a modal window. You can do the following things with it:</p>
+                    <ul>
+                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    </ul>
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventanas modales -->
+        <section style="border:#ff3333 solid thin; width: 1080px; height:1920px; margin: 0 auto; ">
+            <div class="divTable">
+                <div class="divRow">
+                    <div class="divCell md-trigger" id="C001" data-modal="modal-01">001</div>
+                    <div class="divCell md-trigger" id="C002" data-modal="modal-02">002</div>
+                    <div class="divCell md-trigger" id="C003" data-modal="modal-03">003</div>
+                </div>
+                <div class="divRow">
+                    <div class="divCell md-trigger" id="C004" data-modal="modal-04">xxx</div>
+                    <div class="divCell md-trigger" id="C005" data-modal="modal-05">yyy</div>
+                    <div class="divCell md-trigger" id="C006" data-modal="modal-06">www</div>
+                </div>
+            </div>
+        </section>
+        <div class="md-overlay"></div><!-- the overlay element -->
+        <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+        <script src="js/classie.js"></script>
+        <script src="js/modalEffects.js"></script>
+
+        <!-- for the blur effect -->
+        <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+        <script>
+            // this is important for IEs
+            var polyfilter_scriptpath = '/js/';
+        </script>
+        <script src="js/cssParser.js"></script>
+        <script src="js/css-filters-polyfill.js"></script>
+        <script>
+            $('.type2').click(function() {
+                var id = $(this).data('txt');
+                $('.txt').hide();
+                $('#' + id).show();
+            });
+            $('.txt').hide();
+            $(".divCell").click(function() {
+                var id = $(this).attr('id');
+                var ids = "";
+                $(".divCell").each(function() {
+                    if (id !== $(this).attr('id')) {
+                        ids += (ids === "") ? '#' + $(this).attr('id') : ",#" + $(this).attr('id');
+                    }
+                });
+                $('#' + id).animate({
+                    opacity: 0
+                }, 2000);
+                $(ids).animate({
+                    opacity: 1
+                }, 2000);
+            });
+        </script>
+    </body>
+</html>
